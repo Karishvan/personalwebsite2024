@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+.icon-logo {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  margin-right: 10px;
+  
+  
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Invert the color of the icons (e.g., from white to black) */
+}
+

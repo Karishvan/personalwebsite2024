@@ -1,0 +1,71 @@
+/* project section */
+#projects {
+    padding-top: 30px;
+  }
+  
+  .project-title {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  
+  .project-item {
+    background-color: rgb(228, 227, 226);
+  }
+  
+  .project-button {
+    background-color: white;
+    color: rgb(44, 44, 36);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  
+  .project-button:hover {
+    opacity: 0.7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .project-button:active {
+    opacity: 0.5;
+  }
+  
+  .project-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  
+  .project-button-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button-link {
+    text-decoration: none;
+  }
+  
+  .project-text-container {
+    flex-basis: 60%; /* Set a fixed width for the text container */
+    padding: 10px 20px;
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .project-description {
+    width: 80%; /* Set a width for the paragraph */
+    margin: 0 auto; /* Center the paragraph horizontally */
+  }
+  
+  .project-image-thumbnail {
+    width: 5%;
+    height: 5%;
+    border-radius: 15px;
+  }
+  
