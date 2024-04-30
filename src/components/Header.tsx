@@ -1,4 +1,5 @@
 import "./Header.css";
+import CircularImage from "./CircularImage";
 
 const Header = () => {
   let currentYear = new Date().getFullYear();
@@ -20,10 +21,11 @@ const Header = () => {
   }
   return (
     <div id="home">
-      <div>
-        <h1 className="home-title">Hi, I am Karishvan Ragunathan</h1>
+      <div className="home-typed-section">
+        <h1 className="home-title">Hi 👋, I am Karishvan Ragunathan</h1>
         <h2 className="home-description">
-          A {currAge} Year Old Student at TMU
+          A {currAge} Year Old Computer Science Co-op Student at TMU driven to
+          use technology to solve problems
         </h2>
         <div className="home-button">
           <a href="#about">
@@ -31,6 +33,8 @@ const Header = () => {
           </a>
         </div>
       </div>
+
+      <CircularImage image="images/Karishvan.png"></CircularImage>
     </div>
   );
 };
