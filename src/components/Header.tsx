@@ -1,4 +1,4 @@
-import "./Header.css";
+import styles from "./Header.module.css";
 import CircularImage from "./CircularImage";
 
 const Header = () => {
@@ -20,16 +20,18 @@ const Header = () => {
     currAge -= 1;
   }
   return (
-    <div id="home">
-      <div className="home-typed-section">
-        <h1 className="home-title">Hi 👋, I am Karishvan Ragunathan</h1>
-        <h2 className="home-description">
+    <div id={styles["home"]}>
+      <div className={styles["home-typed-section"]}>
+        <h1 className={styles["home-title"]}>
+          Hi 👋, I am Karishvan Ragunathan
+        </h1>
+        <h2 className={styles["home-description"]}>
           A {currAge} Year Old Computer Science Co-op Student at TMU driven to
           use technology to solve problems
         </h2>
-        <div className="home-button">
+        <div className={styles["home-button"]}>
           <a href="#about">
-            <button className="generic-button">View More</button>
+            <button className={styles["generic-button"]}>View More</button>
           </a>
         </div>
       </div>

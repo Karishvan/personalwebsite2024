@@ -1,11 +1,11 @@
-import "./CircularImage.css";
+import styles from "./CircularImage.module.css";
 interface Props {
   image: string;
 }
 
 const CircularImage = ({ image }: Props) => {
   return (
-    <div className="circular-image">
+    <div className={styles["circular-image"]}>
       <img src={image} alt="Circular" />
     </div>
   );
