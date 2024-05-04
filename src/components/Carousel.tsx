@@ -44,46 +44,55 @@ const Carousel = () => {
   };
 
   return (
-    <div id="carouselExample" className="carousel slide">
-      <div className="carousel-inner">
-        {projects.map((project, index) => (
-          <div
-            key={project.id}
-            className={`carousel-item ${
-              index === currentIndex ? "active" : ""
-            }`}
-          >
-            <Project
-              title={project.title}
-              image={`images/${project.image}`}
-              github={project.github}
+    <>
+      <h2>Projects</h2>
+      <div id="carouselExample" className="carousel slide">
+        <div className="carousel-inner">
+          {projects.map((project, index) => (
+            <div
+              key={project.id}
+              className={`carousel-item ${
+                index === currentIndex ? "active" : ""
+              }`}
             >
-              {project.description}
-            </Project>
-          </div>
-        ))}
+              <Project
+                title={project.title}
+                image={`images/${project.image}`}
+                github={project.github}
+              >
+                {project.description}
+              </Project>
+            </div>
+          ))}
+        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+          onClick={prevSlide}
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+          onClick={nextSlide}
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
-      <button
-        className="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="prev"
-        onClick={prevSlide}
-      >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button
-        className="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="next"
-        onClick={nextSlide}
-      >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
-    </div>
+    </>
   );
 };
 

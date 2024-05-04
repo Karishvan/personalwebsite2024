@@ -18,9 +18,9 @@ const Project = ({ title, children, image, github }: Props) => {
           />
           {title}
         </h3>
-        <div className={styles["content-section-text"]}>
-          <p className={styles["project-description"]}>{children}</p>
-        </div>
+
+        <p className={styles["project-description"]}>{children}</p>
+
         <div className={styles["project-button-container"]}>
           <a
             className={styles["button-link"]}
