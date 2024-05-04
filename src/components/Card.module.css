@@ -1,0 +1,10 @@
+.my-card {
+    margin: 20px !important;
+    border-top-width: 2px !important   ;
+    border-right-width: 2px !important;
+    border-bottom-width: 2px !important;
+    border-left-width: 2px !important;
+    border-radius: 10px !important;
+    border-style: solid !important;
+    border-color: black !important;
+}

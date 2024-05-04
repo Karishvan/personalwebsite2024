@@ -31,7 +31,7 @@ const Header = () => {
           use technology to solve problems
         </h2>
         <div className={styles["home-button"]}>
-          <LinkButton className="generic-button" href="#about">
+          <LinkButton className="generic-button" href="#skills">
             View More
           </LinkButton>
         </div>
