@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
 import CircularImage from "./CircularImage";
+import LinkButton from "./LinkButton";
 
 const Header = () => {
   let currentYear = new Date().getFullYear();
@@ -30,9 +31,9 @@ const Header = () => {
           use technology to solve problems
         </h2>
         <div className={styles["home-button"]}>
-          <a href="#about">
-            <button className={styles["generic-button"]}>View More</button>
-          </a>
+          <LinkButton className="generic-button" href="#about">
+            View More
+          </LinkButton>
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import styles from "./Project.module.css";
+import LinkButton from "./LinkButton";
 interface Props {
   title: string;
   children: ReactNode;
@@ -22,17 +23,10 @@ const Project = ({ title, children, image, github }: Props) => {
         <p className={styles["project-description"]}>{children}</p>
 
         <div className={styles["project-button-container"]}>
-          <a
-            className={styles["button-link"]}
-            href={github}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className={styles["project-button"]}>
-              <img className="icon-logo" src="images/github-logo.png" />
-              <div>View Project</div>
-            </button>
-          </a>
+          <LinkButton className="project-button" href={github} target="_blank">
+            <img className="icon-logo" src="images/github-logo.png" />
+            <div>View Project</div>
+          </LinkButton>
         </div>
       </div>
     </div>
